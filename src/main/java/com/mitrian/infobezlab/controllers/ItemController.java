@@ -1,10 +1,8 @@
 package com.mitrian.infobezlab.controllers;
 
-import com.mitrian.infobezlab.data.entities.Item;
 import com.mitrian.infobezlab.dto.ItemRequestDTO;
 import com.mitrian.infobezlab.dto.ItemResponseDTO;
 import com.mitrian.infobezlab.services.ItemService;
-import com.mitrian.infobezlab.services.impl.ItemServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
