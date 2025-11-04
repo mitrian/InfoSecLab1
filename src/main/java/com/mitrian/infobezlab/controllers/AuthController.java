@@ -1,7 +1,5 @@
 package com.mitrian.infobezlab.controllers;
 
-import com.mitrian.infobezlab.data.entities.User;
-import com.mitrian.infobezlab.dto.UserRegisterResponseDTO;
 import com.mitrian.infobezlab.dto.UserRequestDTO;
 import com.mitrian.infobezlab.services.UserService;
 import com.mitrian.infobezlab.services.impl.UserServiceImpl;
