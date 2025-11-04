@@ -1,6 +1,7 @@
 package com.mitrian.infobezlab.configuration;
 
 import com.mitrian.infobezlab.util.JwtAuthFilter;
+import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,13 +17,14 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableMethodSecurity(prePostEnabled = true)
+@AllArgsConstructor
 public class SecurityConfiguration {
 
     private final JwtAuthFilter jwtAuthFilter;
 
-    public SecurityConfiguration(JwtAuthFilter jwtAuthFilter) {
-        this.jwtAuthFilter = jwtAuthFilter;
-    }
+//    public SecurityConfiguration(JwtAuthFilter jwtAuthFilter) {
+//        this.jwtAuthFilter = jwtAuthFilter;
+//    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
