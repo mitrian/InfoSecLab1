@@ -133,7 +133,15 @@ Item &lt;script&gt;alert(&quot;Hello&quot;)&lt;/script&gt; was created
 - **Middleware**: JwtAuthenticationFilter проверяет наличие и валидность токена в заголовке Authorization
 
 ### 4. Статический анализ и проверка зависимостей
-- SpotBugs для выявления потенциальных уязвимостей / багов коде.
-- Snyk для анализа зависимостей на известные CVE.
+- SpotBugs для выявления потенциальных уязвимостей / багов коде
+- OWASP Dependency-Check для анализа зависимостей на известные CVE
 
 ## Скриншоты отчетов
+
+### SAST
+
+![SAST review](./res/images/spotbugs.png)
+
+### SCA
+
+![SCA review](./res/images/sca.png)
